@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --first-color: #02897A;
+}
+
+
+
+/* menu */
+
+.menu_icon {
+    width: 32px;
+    height: 32px;
+    background: #F3F3F3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.btn_first {
+    background: #02897A;
+    border-radius: 4px;
+    border: 1px solid #02897A;
+    color: #fff;
+    font-weight: 600;
+}
+
+.btn_second {
+    background: transparent;
+    border-radius: 4px;
+    border: 1px solid #BCD0E5;
+    color: #000;
+    font-weight: 600;
+}
+
+.menu ul li a {
+    font-size: 16px;
+    color: #22343D;
+}
+
+.active {
+    font-weight: 600;
+}
+
+.brand {
+    color: #173A56;
+    font-size: 38px;
+    text-decoration: none;
+}
+
+
+
+/* menu */
+/* icon bar */
+.menu-trigger {
+    display: inline-block;
+    transition: all 0.4s;
+    box-sizing: border-box;
+    position: relative;
+    width: 50px;
+    height: 44px;
+    transform: scale(0.5);
+}
+
+.menu-trigger span {
+    display: inline-block;
+    transition: all 0.4s;
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #4d4d4d;
+    border-radius: 4px;
+}
+
+.menu-trigger span:nth-of-type(1) {
+    top: 0;
+}
+
+.menu-trigger span:nth-of-type(2) {
+    top: 20px;
+}
+
+.menu-trigger span:nth-of-type(3) {
+    bottom: 0;
+}
+
+.menu-trigger.five.active1 span:nth-of-type(1) {
+    -webkit-transform: translateY(20px) rotate(-45deg);
+    transform: translateY(20px) rotate(-45deg);
+}
+
+.menu-trigger.five.active1 span:nth-of-type(2) {
+    left: 50%;
+    opacity: 0;
+    -webkit-animation: active-menu-bar02 0.8s forwards;
+    animation: active-menu-bar02 0.8s forwards;
+}
+
+@-webkit-keyframes active-menu-bar02 {
+    100% {
+        height: 0;
+    }
+}
+
+@keyframes active-menu-bar02 {
+    100% {
+        height: 0;
+    }
+}
+
+.menu-trigger.five.active1 span:nth-of-type(3) {
+    -webkit-transform: translateY(-20px) rotate(45deg);
+    transform: translateY(-20px) rotate(45deg);
+}
+.card_icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    box-shadow: 0 5px 10px #bdbdbd;
+    padding: 5px;
+    background: #02897A;
+}
+.icon_bg1{
+    background: #740A76;
+}
+.icon_bg2{
+    background: #F03E3D;
+}
+.product{
+    background: url('/img/Bg\ \(1\).png') no-repeat center;
+    background-size: cover;
+}
+.tick_div{
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 50px;
+    background: #F03E3D;
+}
+
+.experts{
+    background: url('/img/Bg.png') no-repeat center;
+    background-size: cover;
+}
+.experts_p,
+.right_p
+{
+    background: #fff;
+    border-radius: 50px;
+    padding: 15px 20px;
+    box-shadow: 0px 2px 15px 0px rgba(23, 58, 86, 0.1);
+    position: relative;
+}
+.experts_p::before{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    bottom: -8px;
+    left: 30px;
+    background: #fff;
+}
+.right_p::before{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    bottom: -8px;
+    right: 30px;
+    background: #fff;
+}
+.content .card,
+.content .card img{
+    transition: all .3s linear;
+    border-radius: 5px 5px 0 0;
+}
+.content .card .flow{
+    overflow: hidden;
+    border-radius: 5px 5px 0 0;
+}
+.content .card h4{
+    line-height: 35px;
+    cursor: pointer;
+    transition: all .3s linear;
+}
+.content .card h4:hover{
+    color:rgba(2, 137, 122, 1);
+}
+.content .card:hover img{
+    transform: scale(1.1);
+}
+.opinion_img{
+    width: 70px;
+}
+.opinion_card{
+    border-radius: 20px;    
+    background: #02897A;
+    color: #fff;
+}
+.opinion_card h3{
+    line-height: 40px;
+}
+
+
+
+.footer a{
+    text-decoration: none;
+    color: #02897A;
+}
+.footer_icon a{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(237, 255, 252, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer ul{
+    list-style: none;
+    padding-left: 0;
+}
+.footer ul li{
+    line-height: 30px;
+}
+.footer ul li a{
+    transition: all .3s linear;
+    color: #000;
+}
+.footer ul li a:hover{
+    color: #02897A;
+}
+.color_first {
+    color: #02897A;
+}
+
+.bg_color {
+    background: #02897A;
+}
